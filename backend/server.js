@@ -7,12 +7,14 @@ const upload = multer();
 const productRoute = require('./routes/api/productRoute');
 
 // Connecting to the Database
-let mongodb_url = 'mongodb+srv://mkavitapauline:lZsps30aen6DJUeR@cluster0.jqwui7k.mongodb.net/';
+let mongodb_url = 'mongodb+srv://pmmwanda:pmmwanda1@cluster0.jqwui7k.mongodb.net/?retryWrites=true&w=majority';
 let dbName = 'yolomy';
 
 // define a url to connect to the database
 const MONGODB_URI = process.env.MONGODB_URI || mongodb_url + dbName
 mongoose.connect(MONGODB_URI,{useNewUrlParser: true, useUnifiedTopology: true  } )
+
+//mongoose.connect(mongodb_url+dbName)
 let db = mongoose.connection;
 
 // Check Connection

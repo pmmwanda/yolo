@@ -13,5 +13,7 @@ This project was forked from Vinge1718:master. then cloned and thereafter worked
 
 Docker-compose up
 
+//Docker image tag
 
+I tagged the client image as client and the backend image as backend
 

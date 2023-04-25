@@ -1,9 +1,6 @@
 const multer = require('multer');
 const path = require('path');
 
-
-
-
 // Set Storage engine
 const storage = multer.diskStorage({
     destination: './public/images/',
@@ -20,8 +17,6 @@ const upload = multer({
         checkFileType(file, cb);
     }
 }).single('image');
-
-
 
 // Check file type
 function checkFileType(file, cb){

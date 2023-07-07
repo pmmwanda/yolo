@@ -14,11 +14,11 @@ provider "aws" {
   secret_key = "QvTAHBqTaDU8nEYuTnwDluNSA0P+OOql5Kj3YLEV"
 }
 
-resource "<provider>_<EC2>" "<yolo>"{
+//resource "<provider>_<EC2>" "<yolo>"{
 config options.... {
   key = "value"
   key = "another value"
-}
+//}
 
 }
 resource "aws_instance" "yolo" {

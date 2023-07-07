@@ -15,8 +15,17 @@ provider "aws" {
 }
 
 resource "<provider>_<EC2>" "<yolo>"{
-config options....connection {
+config options.... {
   key = "value"
   key = "another value"
 }
+
+}
+resource "aws_instance" "yolo" {
+  ami           = 0989fb15ce71ba39e
+  instance_type = "t3.micro"
+
+  tags = {
+    Name = "ansible IP"
+  }
 }

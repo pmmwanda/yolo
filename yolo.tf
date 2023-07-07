@@ -13,3 +13,10 @@ provider "aws" {
   access_key = "AKIAXQJGNRZEG7VTQIPH"
   secret_key = "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"
 }
+
+resource "<provider>_<EC2>" "<yolo>"{
+config options....connection {
+  key = "value"
+  key = "another value"
+}
+}
